@@ -25,16 +25,21 @@ lista_final = []
 for numero in x:
    lista += numero.split()
 lista.sort()
-set_lista = set(lista)
+set_lista = set(lista) 
 set_lista = list(set_lista)
 set_lista.sort()
 print "Secuenica->Número de ocurrencias"
 for numero in set_lista:
     lista_final.append((numero,lista.count(numero)))
  
-lista_final.sort(reverse=True)
+lista_final.sort(reverse=False)
 
-print lista_final
+#print lista_final
+
+for i in lista_final:
+	print (i)
+
+
 
 
 
